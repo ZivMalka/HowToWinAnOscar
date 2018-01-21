@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Analysis";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css">
+<h2 class="headline">Analysis</h2>
+
+<h2 class="t3">Overview</h2>
+
+<p>
+     I tried to predict which movies will win the Oscar this year,<br />
+    and whether there is a connection between winning an Oscar and certain features. <br />
+    I tried to analyze the data, <br />
+    and see the most influential features of a movie on winning an Oscar.<br />
+    thanks to the project <a href="https://github.com/scruwys/and-the-award-goes-to">and-the-award-goes-to</a><br /> 
+    from which the data was taken <br />
+    our data of features included: 
+    <ul>
+        <li>Other awards show: BFTA, Golden Globe, Guild</li>
+        <li>Running Time</li>
+        <li>Box Officr</li>
+        <li>Budget</li>
+        <li>IMDb score</li>
+        <li>RT audience score</li>
+        <li>RT critic score</li>
+        <li>Number of actors</li>
+        <li>Number of writers</li>
+        <li>Release date</li>
+        <li>MPAA</li>
+    </ul>  
+</p>
+<img class="img1" src="~/Images/leonardo-DiCaprio_oscar_graffiti-via-hollywoodreporter.jpg" />
+<h2>Other Awards Show</h2>
+ <p>
+     It is known that other ceremonies serve as a kind of predictor for Oscar films. <br />
+     If a film won the Golden Globes, Batfa and Guild, chances are he will win an Oscar as well.<br />
+     or not? <br />
+     To test this, we used Fisher's excat test on these variables. Here are the results.
+</p>
+
+<img  src="~/Images/tab1.png" />
+
+<h2 style="font-size:20px">Fisher's Exact Test</h2>
+<p style="font-size:16px">BAFTA | p-value = 6.362e-05 | 95 percent confidence interval: 2.284972 to 14.175734 | odds ratio: 5.695619  </p>
+<p style="font-size:16px">Guild | p-value = 0.0002651 | 95 percent confidence interval: 2.194201 to 19.321418 | odds ratio:  6.488601  </p>
+<p style="font-size:16px">Golden Globe | p-value = 3.817e-07 | 95 percent confidence interval:3.084258 to 16.737340 | odds ratio: 7.041181 </p>
+
+<p>As you can see the P-value in all 3, is smaller than 0.05, <br />
+    which mean the alternative hypothesis is true- there is a connection <br />
+    between winning an Oscar and winning in other awards show.                <br />                                  
+    Which one of these awards ceremonies are the best predictor?         <br />
+   Probably the Golden Globe with 7.041181. </p>
+
+
+<img class="img1" src="~/Images/giphy3.gif" />
+
+<h2>MPAA</h2>
+
+
+<p>
+    the MPAA administers a motion picture rating system used in the United States to rate the suitability of films' themes and content for certain audiences.<br />
+    “G” – for general audiences, “PG” – parental guidance<br />
+    suggested, “PG-13” – parents strongly cautioned, “R” – restricted.<br />
+    Does the rate of suitability have an impact on winning an Oscar?
+    lets take look at the distribution of data.
+</p>
+<img src="~/Images/tab2.png" />
+<img src="~/Images/Rplot.png" />
+<br />
+<h2 style="font-size:20px">Fisher's Exact Test</h2>
+<p style="font-size:16px">
+    Mpaa | p-value = 0.8042<p>
+<p>    the p-value is very high, So there seems to be no connection between <br>
+    winning an Oscar and rating of the film.<br />
+    However, The number of R films that were nominated and won an Oscar is significantly higher than the other ratings.<br />
+    so its most likely that if you want to win an oscar, you should do an R film.
+</p>
+
+<h2>Release Date</h2>
+
+<img src="~/Images/Rplot01.png" />
+
+<p> We checked the dates of the films' release. <br />
+    It is noticeable that the films that are being released in December, have the most Oscar nominations. <br />
+    Is there a connection between the two? <br />
+    Are the producers deliberately publishing films late, <br />
+    so that the Academy and the audience will remember them? Or it is attributed to the holiday <br />
+    season - where it is known that people like to go to the cinema.<br />
+
+
+</p>

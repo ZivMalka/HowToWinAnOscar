@@ -1,0 +1,60 @@
+@model IEnumerable<WebApplication1.Models.Attributes>
+
+
+@{
+    ViewBag.Title = "ChooseYear";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css">
+
+
+<header>
+
+    <img class="img4" src="~/Images/12oscars.jpg" />
+    <h2 class="t2"> Prediction for best picture category</h2>
+
+</header>
+<body class="body">
+    @using (Html.BeginForm("CheckWinner", "Predictions", FormMethod.Post))
+
+    {
+        <div class="center">
+            <div class="text">
+                <span class="button">Enter year : </span> <input class="button" type="text" name="txtFirst" />
+                <br /><br />
+                <input class="button" id="Submit1" type="submit" value="Chek Winner prediction" />
+            </div>
+        </div>
+    }
+
+    @if (@ViewBag.curr != null)
+    {
+
+        <table class="center">
+            <tr>
+                <th class="text">
+                    And the oscar nominees are
+                </th>
+
+            </tr>
+
+            @foreach (var item in @ViewBag.curr)
+            {
+                <tr>
+                    <td class="text">
+                        @item.Name
+                    </td>
+                </tr>
+            }
+        </table>
+
+
+        <h2 class="text2">And the Oscar goes to...</h2>
+        <h2 class="text2">@ViewBag.yearResult</h2>
+        <img class="img1" src="~/Images/giphy2.gif" />
+
+        <br />
+
+    }
+
+</body>

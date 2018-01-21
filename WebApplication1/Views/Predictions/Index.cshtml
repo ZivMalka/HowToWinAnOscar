@@ -1,0 +1,171 @@
+﻿@model IEnumerable<WebApplication1.Models.Attributes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Film)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BAFTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoldenGlobe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guild)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Oscar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Running_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Box_office)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imdb_score)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rt_audience_score)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rt_critic_score)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stars_count)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Writers_count)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Produced_USA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PG13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.G)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q1_release)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q2_release)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q3_release)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q4_release)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Film)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BAFTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoldenGlobe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guild)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Oscar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Running_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Box_office)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imdb_score)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rt_audience_score)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rt_critic_score)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stars_count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Writers_count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Produced_USA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PG13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.G)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q1_release)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q2_release)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q3_release)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Q4_release)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

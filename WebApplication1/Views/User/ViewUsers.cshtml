@@ -1,0 +1,158 @@
+﻿@model IEnumerable<WebApplication1.Models.Users>
+
+@{
+    ViewBag.Title = "רשימת משתמשים";
+}
+
+<style>
+    #myTable th, #myTable td {
+        padding: 12px;
+        text-align: right;
+    }
+</style>
+
+<h2>View Users</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<body dir="rtl">
+
+    <div class="element1">
+        <input type="text" id="myInput" class="filter" onkeyup="myFunction()" placeholder="שם משתמש" title="Type in a name">
+
+        <input type="text" id="myInput1" class="filter" onkeyup="myFunction1()" placeholder="אימייל" title="Type in a name">
+
+        <input type="text" id="myInput2" class="filter" onkeyup="myFunction2()" placeholder="טלפון" title="Type in a name">
+
+        <input type="text" id="myInput3" class="filter" onkeyup="myFunction3()" placeholder="כתובת" title="Type in a name">
+
+    </div>
+    <table class="table" id="myTable">
+        <tr>
+            <th>
+                שם משתמש
+            </th>
+            <th>
+                סיסמה
+            </th>
+            <th>
+                אימייל
+            </th>
+            <th>
+                טלפון
+            </th>
+            <th>
+                כתובת
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <script>
+          function myFunction() {
+              var input, filter, table, tr, td, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[0];
+                  if (td) {
+                      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                      } else {
+                          tr[i].style.display = "none";
+                      }
+                  }
+              }
+          }
+    </script>
+
+    <script>
+          function myFunction1() {
+              var input, filter, table, tr, td, i;
+              input = document.getElementById("myInput1");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[2];
+                  if (td) {
+                      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                      } else {
+                          tr[i].style.display = "none";
+                      }
+                  }
+              }
+          }
+    </script>
+
+    <script>
+          function myFunction2() {
+              var input, filter, table, tr, td, i;
+              input = document.getElementById("myInput2");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[3];
+                  if (td) {
+                      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                      } else {
+                          tr[i].style.display = "none";
+                      }
+                  }
+              }
+          }
+    </script>
+
+    <script>
+          function myFunction3() {
+              var input, filter, table, tr, td, i;
+              input = document.getElementById("myInput3");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[4];
+                  if (td) {
+                      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                      } else {
+                          tr[i].style.display = "none";
+                      }
+                  }
+              }
+          }
+    </script>
+</body>
