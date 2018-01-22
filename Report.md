@@ -9,7 +9,7 @@ In each iteration, I calculated the accuracy and weighed the results.
 
 Here are the results:
 
-![alt text](Images/g1.png)
+![alt text](WebApplication1/Images/g1.png)
 
 <img src="/Images/g1.png" />
 
