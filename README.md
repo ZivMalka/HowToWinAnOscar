@@ -11,9 +11,10 @@ The data was taken from an open source project called "And-The-Oscar-goes-to".
 The data included all the candidates and Oscar winners since 1980 meaning I had 218 observations.
 
 ## Built With
--Accord.NET Framwork
--MongoDB
--.NETrR
+- Accord.NET Framwork
+-MongoDB 
+- .NET
+- R
 
 
 ## Credits
