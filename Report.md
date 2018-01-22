@@ -9,7 +9,7 @@ In each iteration, I calculated the accuracy and weighed the results.
 
 Here are the results:
 
-[Contribution guidelines for this project](Images/g1.png)
+![alt text](Images/g1.png)
 
 <img src="/Images/g1.png" />
 
@@ -34,3 +34,4 @@ I was still not sure whether our calculation of the accuracy was correct, and th
 <img  class="img2" src="/Images/g5.jpg" />
 
 You can see the results are no different from previous results.
+l
