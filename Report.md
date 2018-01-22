@@ -27,7 +27,7 @@ As you can see, the results are better, after I have reduced the range of the ye
 
 I was still not sure whether our calculation of the accuracy was correct, and that is precisely the accuracy of the algorithm. Therefore, we estimate the performance of the decision tree model using cross-validation. Here are the results:
 
-![alt text](WebApplication1/Images/g5.png)
+![alt text](WebApplication1/Images/g5.jpg)
 
 You can see the results are no different from previous results.
 
