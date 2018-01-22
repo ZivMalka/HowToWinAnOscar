@@ -9,6 +9,8 @@ In each iteration, I calculated the accuracy and weighed the results.
 
 Here are the results:
 
+(Images/g1.png)
+
 <img src="/Images/g1.png" />
 
 <br /><br /><br />
