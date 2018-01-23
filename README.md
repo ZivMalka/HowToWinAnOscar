@@ -10,6 +10,9 @@ I wanted to see whether certain features have an impact of winning an Oscar, fea
 The data was taken from an open source project called "And-The-Oscar-goes-to".
 The data included all the candidates and Oscar winners since 1980 meaning I had 218 observations.
 
+[Report](Report.md).
+[Analysis](Analysis.md).
+
 ## Built With
 - Accord.NET Framwork
 -  MongoDB
