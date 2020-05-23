@@ -1,6 +1,6 @@
 # Analysis 
 
-To predict which films will receive an Oscar for Best Picture Category this year, I analyzed the data to see if there is any correlation between certain features and Oscar winning. And if so, which features have the biggest impact on winning an Oscar?
+To predict which movie will receive an Oscar for Best Picture Category this year, I analyzed the data to see if there is any correlation between certain features and Oscar winning. And if so, which features have the biggest impact on winning an Oscar?
 
 thanks to the project  [and-the-award-goes-to](https://github.com/scruwys/and-the-award-goes-to),
 from which the data was taken 
