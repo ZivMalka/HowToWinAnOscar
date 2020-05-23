@@ -2,9 +2,9 @@
 
 To maximize the highest level of accuracy, I used several decision tree algorithms: random forests, random decision forests and C45 decision tree. Then I compared the algorithms with each other to choose the best one.
 
-I used a logistic regression model that returned the movie with the highest probability of winning among those the algorithm predicted as winners. Using this model, the algorithm declared a winner.
+I used a logistic regression model that returned the movie with the highest probability of winning among those the algorithms predicted as winners. Using this model, the system declared the winner.
 
-To calculate the accuracy of the algorithm, I created a function that used a confusion matrix (by Accord.Net Framework). 
+To calculate the accuracy of each one of these algorithms, I created a function that used a confusion matrix (by Accord.Net Framework). 
 In each iteration, I calculated the accuracy and weighed the results. 
 
 ![alt text](WebApplication1/Images/g1.png)
