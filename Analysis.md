@@ -33,7 +33,7 @@ Guild | p-value = 0.0002651 | 95 percent confidence interval: 2.194201 to 19.321
 Golden Globe | p-value = 3.817e-07 | 95 percent confidence interval:3.084258 to 16.737340 | odds ratio: 7.041181 
 
 As you can see the P-value in all 3, is smaller than 0.05 > There is a positive relationship between winning an Oscar and winning another award show.                                          
-Which one of these awards ceremonies are the best predictor as pert these results? > the Golden Globe 
+Which one of these awards ceremonies are the best predictor as pert these results? > the Golden Globe.
 Therfore, the 'Other Awards Show' is a good preditior of winning an Oscar.
 ## MPAA
 
