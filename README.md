@@ -8,7 +8,7 @@ This project checks whether certain features have an impact of winning an Oscar.
 
 The dataset was taken from an open source project called "And-the-Oscar-goes-to". It contains 218 observations of all the Oscars candidates and winners since 1980.
 
-## Algorithm performance and analysis
+## Algorithm performance and data analysis
 
 - [Report](Report.md)
 - [Analysis](Analysis.md)
