@@ -14,10 +14,10 @@ Here are the results:
 ![alt text](WebApplication1/Images/g3.png)
 
 
-You can see that the results of the algorithms are almost identical and there is no significant difference.
+As you can see the algorithms are almost identical and there is no significant difference.
 
 ### Does the time affect the outcome? 
-I reduced the size of the data and chose the years between 2006 and 2016.
+I reduced the size of the data and chose between 2006-2016.
 
 ![alt text](WebApplication1/Images/g4.png)
 
@@ -25,9 +25,8 @@ As you can see, the results are better, after I have reduced the range of the ye
 
 ### Cross-Validation
 
-I was still not sure whether our calculation of the accuracy was correct, and that is precisely the accuracy of the algorithm. Therefore, we estimate the performance of the decision tree model using cross-validation. Here are the results:
+To double check the calculation of the algorithm's accuracy, i used  cross-validation to estimate the performance of the decision tree model. Here are the results:
 
 ![alt text](WebApplication1/Images/g5.JPG)
 
-You can see the results are no different from previous results.
-
+See that the results are no different.
