@@ -1,6 +1,6 @@
 # The Report
 
-To maximize the highest level of accuracy, I used several decision tree algorithms: random decision forests and the C45 decision tree. Then I compared the algorithms with each other to choose the best one.
+To maximize the highest level of accuracy, I used several decision tree algorithms: random forests, random decision forests and C45 decision tree. Then I compared the algorithms with each other to choose the best one.
 
 I used a logistic regression model that returned the movie with the highest probability of winning among those the algorithm predicted as winners. Using this model, the algorithm declared a winner.
 
