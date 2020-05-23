@@ -34,7 +34,7 @@ Golden Globe | p-value = 3.817e-07 | 95 percent confidence interval:3.084258 to 
 
 As you can see the P-value in all 3, is smaller than 0.05 > There is a positive relationship between winning an Oscar and winning another award show.                                          
 Which one of these awards ceremonies are the best predictor as pert these results? > the Golden Globe.
-Therfore, the 'Other Awards Show' is a good preditior of winning an Oscar.
+Therfore, the 'Other Awards Show' is a good predictor of winning an Oscar.
 ## MPAA
 
 The MPAA administers a motion picture rating system used in the United States to rate the suitability of films' themes and content for certain audiences.
@@ -48,7 +48,7 @@ Does the rate of suitability have an impact on winning an Oscar? See the distrib
 
 MPAA | p-value = 0.8042
 The p-value is larger than 0.05 > give us a weak certainty.
-However, looking at the the number of R films that were nominated and won an Oscar is significantly higher than the other ratings. 
+However, looking at the the number of R-rated movies that were nominated and won an Oscar is significantly higher than the other variables. 
 
 ## Release Date 
 
