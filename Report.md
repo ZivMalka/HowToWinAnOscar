@@ -1,8 +1,8 @@
 # The Report
 
-To predict whether a film would win an Oscar or not, I used Random forests or random decision forests. I wanted to reach the highest level of accuracy, so I examined additional options, such as a decision tree C45 algorithm.
+To maximize the highest level of accuracy, i used several AI Algorithms for constructing decision trees, such as random forests, random decision forests and C45 decision tree.
 
-Since these algorithms can predict more than one winner a year, or none winner a year, I  used the Logistic Regression, which chose the film with the highest probability of winning among those that the algorithm predicted as winners.
+I used a logistic regression model that returned the movie with the highest probability of winning among those the algorithm predicted as winners.
 
 To calculate the accuracy of the algorithm, I created a function that used a confusion matrix (by Accord.Net Framework). 
 In each iteration, I calculated the accuracy and weighed the results. 
