@@ -2,9 +2,9 @@
 
 
 ## Motivation & Overview  
-A system that can predict whether or not a movie will win an Oscar using AI algorithms.
+A system that predicts whether a movie will win an Oscar using AI algorithms.
 
-This project checks whether certain features have an impact of winning an Oscar. for example: awards show (Golden Globe, BAFTA awards, and guild), IMDb score, critics score, running time, release date, etc. I focused on the best picture category.
+This project checks whether certain features have an impact of winning an Oscar: awards shows (Golden Globe, BAFTA awards, and guild), IMDb score, critics score, running time, release date, etc. I focused on the best picture category.
 
 The dataset was taken from an open source project called "And-the-Oscar-goes-to". It contains 218 observations of all the Oscars candidates and winners since 1980.
 
